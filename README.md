@@ -1,8 +1,10 @@
 PHP SQL INJECTION FILTERER v 1.0.0.0
 
-Usage:
+<h2>Usage:</h2>
+
 //String taken from user
-`$filtered_string = $securiy->filterString(String)`
+<br/>
+`$filtered_string = $securiy->filterString($input_from_user)`
 
 
 
