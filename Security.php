@@ -3,14 +3,29 @@
 class Security
 {
 
-	public function filterString($in_string)
+	$original_string;
+
+	public function filter_string($in_string)
 	{
+	
+	 $original_string = $in_string;
 
-         $replace_this  =  array("'","1=1","<script>","</script>","<a","\"" ); 
+	 $in_string 	= strtolower($in_string);
 
-	 $by_this =  array('"',"","","","","");
+         $replace_this  =  array("'","1=1","<script>","</script>","<a","\"",
+				 "<svg","<img"); 
+
+	 $by_this 	=  array('"',"","","","","",
+			   "","");
 
 	 return str_ireplace($replace_this,$by_this,$in_string);
+		
+	}
+
+	public function get_original_string()
+	{
+	
+		return $original_string;
 		
 	}
 
