@@ -13,10 +13,10 @@ class Security
 	 $in_string 	= strtolower($in_string);
 
          $replace_this  =  array("'","1=1","<script>","</script>","<a","\"",
-				 "<svg","<img","document.","window."); 
+				 "<svg","<img","document.","window.","union","select"); 
 
 	 $by_this 	=  array('"',"","","","","",
-			   "","","","",);
+			  	 "","","","","","");
 
 	 return str_ireplace($replace_this,$by_this,$in_string);
 		
