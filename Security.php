@@ -80,12 +80,13 @@ class Security
 
 }
 
+// TESTING  THE METHODS...
 
-$sec = new Security();
-$originalstring = "This is excellent <script> \ <svg select union";
-echo $originalstring;
-$data1 =  $sec->filter_string($originalstring);
-echo "\nFiltered String : ".$data1;
-$data2 =  $sec->reverse_data($data1);
-echo "\nReversed String : ".$data2;
+// $sec = new Security();
+// $originalstring = "This is excellent <script> \ <svg select union";
+// echo $originalstring;
+// $data1 =  $sec->filter_string($originalstring);
+// echo "\nFiltered String : ".$data1;
+// $data2 =  $sec->reverse_data($data1);
+// echo "\nReversed String : ".$data2;
 
