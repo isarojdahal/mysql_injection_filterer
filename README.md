@@ -1,11 +1,13 @@
-PHP SQL INJECTION FILTERER v 1.0.0.0
+# PHP SQL INJECTION FILTERER 
+v 1.0.0.0
 
-<h2>Usage:</h2>
+ ## **Usage**
 
-//String taken from user
-<br/>
-`$filtered_string = $securiy->filterString($input_from_user)`
+//First create an object
 
+`$security = new Security();`
 
+//Pass text to filter_string method
 
+`$filtered_string = $securiy->filter_string($input_from_user)`
 
